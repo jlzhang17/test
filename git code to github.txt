@@ -1,0 +1,27 @@
+git code to github.com
+
+1.Creat new repositories @github.com
+
+2.select code file @local PC, right click and "Git Bash here"
+
+3.$ ssh-keygen -t rsa -C "phyjlzhang@163.com" #set up ssh
+
+3.5 github.com->settings->ssh, copy rsa ssh from id_ras.pub to github.com #u will receive an email from github
+
+4.$ ssh -T git@github.com #check ssh
+
+5.$ git config --global user.name "jlzhang"  #git config, set up usrname
+
+6.$ git config --global user.email "phyjlzhang@163.com"  #git config, set up email
+
+7.$ git init
+
+8.$ git add .
+
+9.$ git commit -m "test"  #add a commit
+
+10.$ git remote add origin git@github.com:phyjlzhang/test.git  
+
+11.$ git push -u origin master
+
+11.1$ git pull- rebase master #pull all files from repositories
